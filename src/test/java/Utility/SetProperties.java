@@ -25,7 +25,7 @@ public class SetProperties {
 			 * Read Input's from AppConfig Properties file
 			 */
 			
-			appConfig.readFile(new File(System.getProperty("user.dir")+ "/src/test/resources/PropertyFiles/appConfig.properties"));
+			//appConfig.readFile(new File(System.getProperty("user.dir")+ "/src/test/resources/PropertyFiles/appConfig.properties"));
 
 //			appConfig.readFile(new File("/Amazon_Test/src/test/resources/PropertyFiles/appConfig.properties"));
 

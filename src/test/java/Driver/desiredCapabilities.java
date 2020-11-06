@@ -53,13 +53,13 @@ public class desiredCapabilities {
 	 */
 	public void SetDesiredCapabilities() throws MalformedURLException, InterruptedException {
 		
-		PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/test/resources/PropertyFiles/Configuration.properties");
+		//PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/test/resources/PropertyFiles/Configuration.properties");
 		
 		/**
 		 *  @param : APP Platform
 		 */
 
-		if (prop.platformName.equalsIgnoreCase("Android")) {
+		//if (prop.platformName.equalsIgnoreCase("Android")) {
 			
 			/**
 			 * Start the Appium Service with AppiumDriverLocalService
@@ -78,23 +78,23 @@ public class desiredCapabilities {
 
     		Log.info("Set The Desired value for the Test Device in App.Config file");
     		
-    		String ANDROID_DEVICE_SOCKET = appConfig.getValue("appPackage") + "_devtools_remote";            
+    		//String ANDROID_DEVICE_SOCKET = appConfig.getValue("appPackage") + "_devtools_remote";
 
-    		capabilities.setCapability("platformName", appConfig.getValue("Platform"));
-    		capabilities.setCapability("platformVersion",appConfig.getValue("androidVersion"));
-    		
-    		capabilities.setCapability("deviceName",appConfig.getValue("deviceName") );
-    		capabilities.setCapability("udid", appConfig.getValue("udid")); 
-    		capabilities.setCapability("appPackage", appConfig.getValue("appPackage"));
-    		capabilities.setCapability("appActivity", appConfig.getValue("appActivity"));
+//    		capabilities.setCapability("platformName", "Android");
+//    		capabilities.setCapability("platformVersion", "11.0");
+//			capabilities.setCapability("app", "/Users/itaybrenner/Downloads/OkCredit.apk");
+//    		capabilities.setCapability("deviceName","Android Emulator");
+//    		capabilities.setCapability("appPackage", "in.okcredit.merchant");
+    		capabilities.setCapability("appActivity", "in.okcredit.app.ui.launcher.LauncherActivity");
     		capabilities.setCapability("appWaitActivity", "in.okcredit.app.ui.language.LanguageActivity");
-
-    		capabilities.setCapability("automationName", appConfig.getValue("automationName"));
-    		
-    		capabilities.setCapability("instrumentApp", true);
-			capabilities.setCapability("noReset", false);
-    		capabilities.setCapability("androidDeviceSocket", ANDROID_DEVICE_SOCKET);
-    		capabilities.setCapability("newCommandTimeout", 150);
+//
+//    		capabilities.setCapability("automationName", "UiAutomator2");
+//
+//    		capabilities.setCapability("instrumentApp", true);
+//			capabilities.setCapability("noReset", false);
+//    		capabilities.setCapability("androidDeviceSocket", ANDROID_DEVICE_SOCKET);
+//
+//    		capabilities.setCapability("newCommandTimeout", 150);
     		
 //    		 Starting the Appium Desktop on IP :127.0.0.1  and Port : 4723
     		driver =  new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
@@ -110,10 +110,10 @@ public class desiredCapabilities {
     		PageFactory.initElements(driver, HomePage_OR.class);
     		PageFactory.initElements(driver, CustomerPage_OR.class);
 
-		}
-		else {
-			System.out.println("Expected Platform not specified");
-		}
+//		}
+//		else {
+//			System.out.println("Expected Platform not specified");
+//		}
 		
 	}
 	/**

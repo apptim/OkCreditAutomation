@@ -10,6 +10,7 @@ import com.google.common.io.Files;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.junit.Cucumber;
 
 
 public class BaseTest extends desiredCapabilities {
@@ -19,7 +20,7 @@ public class BaseTest extends desiredCapabilities {
 @Before
 public void beforeHookfunction() throws MalformedURLException, InterruptedException{
         
-	Reporter.assignAuthor(" Sivasankaramalan Gunasekarasivam ");
+	//Reporter.assignAuthor(" Sivasankaramalan Gunasekarasivam ");
 
 	    SetDesiredCapabilities();
     }
