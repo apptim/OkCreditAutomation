@@ -16,7 +16,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ObjectRepository.LandingPage_OR;
-import ObjectRepository.HamburgerMenu_OR;
 import ObjectRepository.HomePage_OR;
 import ObjectRepository.AccountPage_OR;
 import ObjectRepository.CustomerPage_OR;
@@ -106,7 +105,6 @@ public class desiredCapabilities {
     		
     		PageFactory.initElements(driver, LandingPage_OR.class);
     		PageFactory.initElements(driver, AccountPage_OR.class);
-    		PageFactory.initElements(driver, HamburgerMenu_OR.class);
     		PageFactory.initElements(driver, HomePage_OR.class);
     		PageFactory.initElements(driver, CustomerPage_OR.class);
 
