@@ -9,7 +9,7 @@ import Driver.desiredCapabilities;
 
 public class Log extends desiredCapabilities{
  
-    //Initialize Log4j instance
+	//Initialize Log4j instance
     private static Logger Log = Logger.getLogger(Log.class.getName());
  
     //We can use it when starting tests
