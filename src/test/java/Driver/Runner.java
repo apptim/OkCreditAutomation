@@ -25,7 +25,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 //plugin = {"com.cucumber.listener.ExtentCucumberFormatter:"},
-features = "/Users/sivasankaramalan.g/Desktop/OkCreditAutomation-1/src/test/resources/features/OkCredit.feature"
+features = "classpath:features/OkCredit.feature"
 //tags= {"~@Sanity","@Regression", "Login", "SignUp"},
 //monochrome = true
  )

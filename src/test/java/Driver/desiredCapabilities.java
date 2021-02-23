@@ -84,8 +84,9 @@ public class desiredCapabilities {
 //			capabilities.setCapability("app", "/Users/itaybrenner/Downloads/OkCredit.apk");
 //    		capabilities.setCapability("deviceName","Android Emulator");
 //    		capabilities.setCapability("appPackage", "in.okcredit.merchant");
-    		capabilities.setCapability("appActivity", "in.okcredit.app.ui.launcher.LauncherActivity");
-    		capabilities.setCapability("appWaitActivity", "in.okcredit.app.ui.language.LanguageActivity");
+//    		capabilities.setCapability("appActivity", "in.okcredit.navigation.NavigationActivity");
+    		capabilities.setCapability("appWaitActivity", "in.okcredit.frontend.ui.MainActivity");
+    		capabilities.setCapability("autoGrantPermissions", true);
 //
 //    		capabilities.setCapability("automationName", "UiAutomator2");
 //
